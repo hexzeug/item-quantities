@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Item Quantities</title>
+    <link rel="stylesheet" href="bulma.min.css" />
+  </head>
+  <body>
+    <nav class="level py-5">
+      <div class="level-item has-text-centered">
+        <h1 class="title is-1">Item Quantities</h1>
+      </div>
+    </nav>
+    <section class="section">
+      <div class="container">
+        <div class="columns">
+          <div class="column is-6 is-offset-3">
+            <div class="field has-addons">
+              <div class="control is-expanded">
+                <input
+                  class="input has-text-right"
+                  inputmode="numeric"
+                  pattern="\d+"
+                  type="text"
+                  size="24"
+                  id="items"
+                  value="0"
+                />
+              </div>
+              <div class="control">
+                <a class="button is-static"> Items </a>
+              </div>
+            </div>
+            <div class="field has-addons">
+              <div class="control is-expanded">
+                <input
+                  class="input has-text-right"
+                  inputmode="numeric"
+                  pattern="\d+(\.\d+)?"
+                  type="text"
+                  size="24"
+                  id="stacks"
+                  value="0.0"
+                />
+              </div>
+              <div class="control">
+                <a class="button is-static"> Stacks </a>
+              </div>
+            </div>
+            <div class="field has-addons">
+              <div class="control is-expanded">
+                <input
+                  class="input has-text-right"
+                  inputmode="numeric"
+                  pattern="\d+"
+                  type="text"
+                  size="12"
+                  id="wholeStacks"
+                  value="0"
+                />
+              </div>
+              <div class="control">
+                <a class="button is-static"> Stacks </a>
+              </div>
+              <div class="control">
+                <input
+                  class="input has-text-right"
+                  inputmode="numeric"
+                  pattern="\d+"
+                  type="text"
+                  size="12"
+                  id="restItems1"
+                  value="0"
+                />
+              </div>
+              <div class="control">
+                <a class="button is-static"> Items </a>
+              </div>
+            </div>
+            <div class="field has-addons">
+              <div class="control is-expanded">
+                <input
+                  class="input has-text-right"
+                  inputmode="numeric"
+                  pattern="\d+(\.\d+)?"
+                  type="text"
+                  size="24"
+                  id="shulkers"
+                  value="0.0"
+                />
+              </div>
+              <div class="control">
+                <a class="button is-static"> Shulkers </a>
+              </div>
+            </div>
+            <div class="field has-addons">
+              <div class="control is-expanded">
+                <input
+                  class="input has-text-right"
+                  inputmode="numeric"
+                  pattern="\d+"
+                  type="text"
+                  size="8"
+                  id="wholeShulkers"
+                  value="0"
+                />
+              </div>
+              <div class="control">
+                <a class="button is-static"> Shulkers </a>
+              </div>
+              <div class="control">
+                <input
+                  class="input has-text-right"
+                  inputmode="numeric"
+                  pattern="\d"
+                  type="text"
+                  size="8"
+                  id="restWholeStacks"
+                  value="0"
+                />
+              </div>
+              <div class="control">
+                <a class="button is-static"> Stacks </a>
+              </div>
+              <div class="control">
+                <input
+                  class="input has-text-right"
+                  inputmode="numeric"
+                  pattern="\d+"
+                  type="text"
+                  size="8"
+                  id="restItems2"
+                  value="0"
+                />
+              </div>
+              <div class="control">
+                <a class="button is-static"> Items </a>
+              </div>
+            </div>
+            <div class="pt-5"></div>
+            <div class="field is-grouped">
+              <div class="control is-expanded">
+                <input
+                  class="input has-text-right"
+                  inputmode="numeric"
+                  pattern="\d+"
+                  type="text"
+                  id="constant"
+                  value="9"
+                />
+              </div>
+              <div class="control is-expanded">
+                <a class="button is-fullwidth is-link" id="multiply"
+                  >Multiply</a
+                >
+              </div>
+              <div class="control is-expanded">
+                <a class="button is-fullwidth is-link is-light" id="divide"
+                  >Divide</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+  <script src="index.js"></script>
+</html>
